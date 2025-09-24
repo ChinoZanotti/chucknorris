@@ -126,3 +126,13 @@ body {
   border-width: 4px 0 0;
   background: none;
 }
+
+.loading {
+  animation: fadeLoop .8s ease-in-out infinite;
+}
+
+@keyframes fadeLoop {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}

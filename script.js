@@ -5,7 +5,7 @@ let span = document.getElementsByClassName("modal__close")[0];
 btn.onclick = function() {
     document.getElementById("joke").innerHTML = `<span class="loading">👊</span>`;
     modal.style.display = "block";
-    // getJoke("https://api.chucknorris.io/jokes/random");
+    getJoke("https://api.chucknorris.io/jokes/random");
 }
 
 span.onclick = function() {

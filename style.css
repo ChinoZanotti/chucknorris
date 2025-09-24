@@ -1,0 +1,30 @@
+.modal__content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.modal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.modal__close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#joke {
+    text-align: center;
+}

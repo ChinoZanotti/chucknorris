@@ -1,21 +1,19 @@
-let modal = document.getElementById("joke-modal");
 let btn = document.getElementById("get-joke");
-let span = document.getElementsByClassName("modal__close")[0];
+let oCount = 1;
+
+// btn.addEventListener(click, () => {
+//   const jokeEl = document.getElementById("joke");
+//   jokeEl.innerHTML = `<span class="loading">👊</span>`;
+//   getJoke("https://api.chucknorris.io/jokes/random");
+//   btn.textContent = `I Need M${"o".repeat(oCount)}re!`;
+//   oCount++;
+// })
 
 btn.onclick = function() {
     document.getElementById("joke").innerHTML = `<span class="loading">👊</span>`;
-    modal.style.display = "block";
     getJoke("https://api.chucknorris.io/jokes/random");
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+    btn.innerHTML = `I Need M${"o".repeat(oCount)}re!`;
+    oCount++;
 }
 
 //Chuck Norris Jokes API
